@@ -7,6 +7,12 @@ class Unpick < Formula
   sha256 "38460dd0a809c6b09d0e197de539e632994ad822d48895b9757153411211bbf3"
   license "Apache-2.0"
 
+  bottle do
+    root_url "https://github.com/amberb617/homebrew-tap/releases/download/unpick-0.6.0"
+    sha256 cellar: :any, arm64_tahoe:  "1f693e7d129f7f4e19ad1f794e831fc5588780bce4941c0ae0562850ec395ffc"
+    sha256 cellar: :any, x86_64_linux: "67c0bec2743737a03c2861ac49c9b8c5872374274edfbcec41da9ed14f836e17"
+  end
+
   depends_on "libyaml"
   depends_on "python@3.13"
 
